@@ -2,9 +2,12 @@
   {
     "navn": "Ingierstrand bad",
     "sted": "Nordre Follo",
-    "lat": 59.8260,
-    "lng": 10.7660,
-    "hoyder": [5, 10],
+    "lat": 59.826,
+    "lng": 10.766,
+    "hoyder": [
+      5,
+      10
+    ],
     "type": "Stupetårn",
     "beskrivelse": "Klassisk friluftsbad ved Bunnefjorden med stupetårn.",
     "verifisert": false
@@ -14,7 +17,12 @@
     "sted": "Oslo",
     "lat": 59.9271,
     "lng": 10.7099,
-    "hoyder": [1, 3, 5, 10],
+    "hoyder": [
+      1,
+      3,
+      5,
+      10
+    ],
     "type": "Stupetårn (basseng)",
     "beskrivelse": "Utendørs friluftsbad med stupeanlegg. Åpent om sommeren.",
     "verifisert": false
@@ -22,9 +30,11 @@
   {
     "navn": "Sørenga sjøbad",
     "sted": "Oslo",
-    "lat": 59.9030,
-    "lng": 10.7530,
-    "hoyder": [3],
+    "lat": 59.903,
+    "lng": 10.753,
+    "hoyder": [
+      3
+    ],
     "type": "Stupebrett",
     "beskrivelse": "Sjøbad midt i byen med brygger og stupebrett.",
     "verifisert": false
@@ -32,11 +42,41 @@
   {
     "navn": "Nordnes sjøbad",
     "sted": "Bergen",
-    "lat": 60.3990,
-    "lng": 5.3050,
-    "hoyder": [3],
+    "lat": 60.399,
+    "lng": 5.305,
+    "hoyder": [
+      3
+    ],
     "type": "Stupebrett",
     "beskrivelse": "Sjøbad med oppvarmet basseng og bading i sjøen.",
+    "verifisert": false
+  },
+  {
+    "navn": "Hvalstrand bad",
+    "sted": "Asker",
+    "lat": 59.8634,
+    "lng": 10.4938,
+    "hoyder": [
+      3,
+      5,
+      10
+    ],
+    "type": "Stupetårn",
+    "beskrivelse": "Populært friluftsbad med sandstrand, svaberg og stupetårn med plattformer på 3, 5 og 10 meter.",
+    "verifisert": false
+  },
+  {
+    "navn": "Kadettangen",
+    "sted": "Bærum (Sandvika)",
+    "lat": 59.8878,
+    "lng": 10.523,
+    "hoyder": [
+      3,
+      5,
+      10
+    ],
+    "type": "Stupetårn",
+    "beskrivelse": "Badeplass i Sandvika med stupetårn på 3, 5 og 10 meter, badebinge, kiosk og dusjer.",
     "verifisert": false
   }
 ]
