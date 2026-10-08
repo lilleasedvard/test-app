@@ -2,15 +2,18 @@
   {
     "navn": "Ingierstrand bad",
     "sted": "Nordre Follo",
-    "lat": 59.826,
-    "lng": 10.766,
+    "lat": 59.8186,
+    "lng": 10.7486,
     "hoyder": [
+      2,
+      3,
       5,
       10
     ],
     "type": "Stupetårn",
-    "beskrivelse": "Klassisk friluftsbad ved Bunnefjorden med stupetårn.",
-    "verifisert": false
+    "beskrivelse": "Klassisk friluftsbad ved Bunnefjorden med stupetårn på 2, 3, 5 og 10 meter.",
+    "verifisert": false,
+    "kategori": "Stupetårn"
   },
   {
     "navn": "Frognerbadet",
@@ -25,7 +28,8 @@
     ],
     "type": "Stupetårn (basseng)",
     "beskrivelse": "Utendørs friluftsbad med stupeanlegg. Åpent om sommeren.",
-    "verifisert": false
+    "verifisert": false,
+    "kategori": "Stupetårn"
   },
   {
     "navn": "Sørenga sjøbad",
@@ -37,7 +41,8 @@
     ],
     "type": "Stupebrett",
     "beskrivelse": "Sjøbad midt i byen med brygger og stupebrett.",
-    "verifisert": false
+    "verifisert": false,
+    "kategori": "Stupetårn"
   },
   {
     "navn": "Nordnes sjøbad",
@@ -49,13 +54,14 @@
     ],
     "type": "Stupebrett",
     "beskrivelse": "Sjøbad med oppvarmet basseng og bading i sjøen.",
-    "verifisert": false
+    "verifisert": false,
+    "kategori": "Stupetårn"
   },
   {
     "navn": "Hvalstrand bad",
     "sted": "Asker",
-    "lat": 59.8429,
-    "lng": 10.4909,
+    "lat": 59.8432,
+    "lng": 10.4923,
     "hoyder": [
       3,
       5,
@@ -63,7 +69,8 @@
     ],
     "type": "Stupetårn",
     "beskrivelse": "Populært friluftsbad med sandstrand, svaberg og stupetårn med plattformer på 3, 5 og 10 meter.",
-    "verifisert": false
+    "verifisert": false,
+    "kategori": "Stupetårn"
   },
   {
     "navn": "Kadettangen",
@@ -77,6 +84,51 @@
     ],
     "type": "Stupetårn",
     "beskrivelse": "Badeplass i Sandvika med stupetårn på 3, 5 og 10 meter, badebinge, kiosk og dusjer.",
+    "verifisert": false,
+    "kategori": "Stupetårn"
+  },
+  {
+    "navn": "Panteren",
+    "sted": "Bygdøy, Oslo",
+    "lat": 59.9053,
+    "lng": 10.664,
+    "hoyder": [],
+    "type": "Klippe",
+    "kategori": "Klippe",
+    "beskrivelse": "Klippe på vestsiden av Bygdøy der folk hopper i sjøen. Høyden er ikke kjent.",
+    "verifisert": false
+  },
+  {
+    "navn": "Kalvøya",
+    "sted": "Bærum (Sandvika)",
+    "lat": 59.8834,
+    "lng": 10.5356,
+    "hoyder": [],
+    "type": "Klippe",
+    "kategori": "Klippe",
+    "beskrivelse": "Friluftsøy utenfor Sandvika med svaberg og klipper rundt hele øya. Høydene varierer.",
+    "verifisert": false
+  },
+  {
+    "navn": "Svartkulp",
+    "sted": "Sognsvann, Oslo",
+    "lat": 59.9757,
+    "lng": 10.7395,
+    "hoyder": [],
+    "type": "Klippe (ferskvann)",
+    "kategori": "Klippe",
+    "beskrivelse": "Liten skogstjern øst for Sognsvann med berg å hoppe fra. Ca. 10 minutters gange fra parkeringen.",
+    "verifisert": false
+  },
+  {
+    "navn": "Ingierstrand-brua",
+    "sted": "Nordre Follo",
+    "lat": 59.8259,
+    "lng": 10.7698,
+    "hoyder": [],
+    "type": "Bro",
+    "kategori": "Bro",
+    "beskrivelse": "Bro på Ingierstrandveien nord for Ingierstrand bad. Høyde og dybde er ikke kjent.",
     "verifisert": false
   }
 ]

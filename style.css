@@ -56,6 +56,30 @@ button {
   cursor: pointer;
 }
 
+.kategorier { display: flex; flex-wrap: wrap; gap: 0.75rem; width: 100%; }
+.kategori { display: inline-flex; align-items: center; gap: 0.35rem; cursor: pointer; }
+
+.prikk {
+  display: inline-block;
+  width: 0.75rem;
+  height: 0.75rem;
+  border-radius: 50%;
+  margin-right: 0.35rem;
+  border: 2px solid #fff;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15);
+  vertical-align: -0.05rem;
+}
+.kategori .prikk { margin-right: 0; }
+
+.forklaring {
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 6px;
+  padding: 0.4rem 0.6rem;
+  font-size: 0.8rem;
+  line-height: 1.6;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+}
+
 .status { width: 100%; margin: 0; color: var(--dempet); font-size: 0.9rem; }
 
 #kart {

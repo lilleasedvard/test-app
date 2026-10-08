@@ -51,8 +51,22 @@ function formaterAvstand(km) {
   return km < 1 ? `${Math.round(km * 1000)} m` : `${km.toFixed(1)} km`;
 }
 
+// Farge per kategori. Samme farger brukes i forklaringen på kartet og i listen.
+const KATEGORIER = {
+  "Stupetårn": "#0077b6",
+  "Klippe": "#c2410c",
+  "Bro": "#7c3aed",
+};
+const valgteKategorier = new Set(Object.keys(KATEGORIER));
+
+// Høyeste hopp i meter, eller null hvis høyden ikke er kjent.
 function hoyesteHopp(sted) {
-  return Math.max(...sted.hoyder);
+  return sted.hoyder.length ? Math.max(...sted.hoyder) : null;
+}
+
+function hoydeTekst(sted) {
+  const h = hoyesteHopp(sted);
+  return h === null ? "ukjent høyde" : `opptil ${h} m`;
 }
 
 function tegn() {
@@ -61,23 +75,28 @@ function tegn() {
   listeEl.innerHTML = "";
 
   const synlige = steder
-    .filter((s) => hoyesteHopp(s) >= minHoyde)
+    .filter((s) => valgteKategorier.has(s.kategori))
+    // Steder med ukjent høyde vises bare når filteret står på 0.
+    .filter((s) => minHoyde === 0 || (hoyesteHopp(s) ?? -1) >= minHoyde)
     .map((s) => ({ ...s, avstand: avstandKm(posisjon, s) }))
     .sort((a, b) => a.avstand - b.avstand);
 
   if (synlige.length === 0) {
-    listeEl.innerHTML = "<li>Ingen steder med så høye hopp.</li>";
+    listeEl.innerHTML = "<li>Ingen steder passer filteret.</li>";
     return;
   }
 
   for (const s of synlige) {
-    const hoyder = s.hoyder.map((h) => `${h} m`).join(", ");
+    const farge = KATEGORIER[s.kategori] || KATEGORIER["Stupetårn"];
+    const hoyder = s.hoyder.length
+      ? s.hoyder.map((h) => `${h} m`).join(", ")
+      : "høyde ikke kjent";
     const popup = `<strong>${s.navn}</strong><br>${s.type}: ${hoyder}<br>${s.beskrivelse}`;
     const markor = L.circleMarker([s.lat, s.lng], {
       radius: 9,
       color: "#ffffff",
       weight: 2,
-      fillColor: "#0077b6",
+      fillColor: farge,
       fillOpacity: 1,
     })
       .addTo(kart)
@@ -87,10 +106,10 @@ function tegn() {
     const li = document.createElement("li");
     li.innerHTML = `
       <div class="topp">
-        <strong>${s.navn}</strong>
+        <strong><span class="prikk" style="background:${farge}"></span>${s.navn}</strong>
         <span class="avstand">${formaterAvstand(s.avstand)}</span>
       </div>
-      <div class="info">${s.sted} · ${s.type} · opptil ${hoyesteHopp(s)} m</div>`;
+      <div class="info">${s.sted} · ${s.type} · ${hoydeTekst(s)}</div>`;
     li.addEventListener("click", () => {
       kart.setView([s.lat, s.lng], 14);
       markor.openPopup();
@@ -124,6 +143,32 @@ function finnMeg() {
         "Fikk ikke tilgang til posisjonen. Viser avstand fra Oslo sentrum.";
     }
   );
+}
+
+// Forklaring nederst til venstre på kartet.
+const forklaring = L.control({ position: "bottomleft" });
+forklaring.onAdd = () => {
+  const div = L.DomUtil.create("div", "forklaring");
+  div.innerHTML = Object.entries(KATEGORIER)
+    .map(([navn, farge]) => `<div><span class="prikk" style="background:${farge}"></span>${navn}</div>`)
+    .join("");
+  return div;
+};
+forklaring.addTo(kart);
+
+// Avkrysningsbokser for hvilke typer steder som vises.
+const kategoriEl = document.getElementById("kategorier");
+for (const [navn, farge] of Object.entries(KATEGORIER)) {
+  const label = document.createElement("label");
+  label.className = "kategori";
+  label.innerHTML = `<input type="checkbox" checked value="${navn}">
+    <span class="prikk" style="background:${farge}"></span>${navn}`;
+  label.querySelector("input").addEventListener("change", (e) => {
+    if (e.target.checked) valgteKategorier.add(navn);
+    else valgteKategorier.delete(navn);
+    tegn();
+  });
+  kategoriEl.appendChild(label);
 }
 
 document.getElementById("finn-meg").addEventListener("click", finnMeg);
