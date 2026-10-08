@@ -60,6 +60,7 @@ button {
 
 #kart {
   height: 380px;
+  background: #a8d4f0; /* hav, synlig når kartflisene ikke lastes */
   border-radius: 8px;
   margin-bottom: 1rem;
 }

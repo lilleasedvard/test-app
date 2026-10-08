@@ -23,6 +23,10 @@ python3 -m http.server 8000
 Stedene ligger i `data/spots.json`. Dagens data er **eksempler som ikke er
 verifisert**. Sjekk høyder og koordinater før siden tas i bruk.
 
+`data/norge.geojson` er Norges fylker (kystlinje) fra Kartverket, via
+[robhop/fylker-og-kommuner](https://github.com/robhop/fylker-og-kommuner).
+Den brukes som bakgrunnskart når kartflisene fra OpenStreetMap ikke lastes.
+
 ## Mulige neste steg
 
 - Hente badesteder automatisk fra OpenStreetMap (Overpass API)

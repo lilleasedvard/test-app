@@ -8,9 +8,26 @@ let markorer = [];
 let brukerMarkor = null;
 
 const kart = L.map("kart").setView([posisjon.lat, posisjon.lng], 10);
+
+// Innebygd bakgrunnskart (Norges kystlinje) som ligger under kartflisene.
+// Det vises hvis flisene fra OpenStreetMap ikke kan lastes, f.eks. uten nett
+// eller i forhåndsvisninger som blokkerer eksterne bilder.
+kart.createPane("land");
+kart.getPane("land").style.zIndex = 150;
+fetch("data/norge.geojson")
+  .then((r) => r.json())
+  .then((data) => {
+    L.geoJSON(data, {
+      pane: "land",
+      interactive: false,
+      style: { color: "#9aa5ae", weight: 0.6, fillColor: "#f2efe6", fillOpacity: 1 },
+    }).addTo(kart);
+  })
+  .catch(() => {});
+
 L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
   maxZoom: 18,
-  attribution: "© OpenStreetMap-bidragsytere",
+  attribution: "© OpenStreetMap-bidragsytere · Kystlinje: Kartverket",
 }).addTo(kart);
 
 const statusEl = document.getElementById("status");
@@ -56,7 +73,15 @@ function tegn() {
   for (const s of synlige) {
     const hoyder = s.hoyder.map((h) => `${h} m`).join(", ");
     const popup = `<strong>${s.navn}</strong><br>${s.type}: ${hoyder}<br>${s.beskrivelse}`;
-    const markor = L.marker([s.lat, s.lng]).addTo(kart).bindPopup(popup);
+    const markor = L.circleMarker([s.lat, s.lng], {
+      radius: 9,
+      color: "#ffffff",
+      weight: 2,
+      fillColor: "#0077b6",
+      fillOpacity: 1,
+    })
+      .addTo(kart)
+      .bindPopup(popup);
     markorer.push(markor);
 
     const li = document.createElement("li");
