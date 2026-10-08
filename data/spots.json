@@ -1,0 +1,360 @@
+[
+  {
+    "navn": "Ingierstrand bad",
+    "sted": "Nordre Follo",
+    "lat": 59.8186,
+    "lng": 10.7486,
+    "hoyder": [
+      2,
+      3,
+      5,
+      10
+    ],
+    "type": "Stupetårn",
+    "beskrivelse": "Klassisk friluftsbad ved Bunnefjorden med stupetårn på 2, 3, 5 og 10 meter.",
+    "verifisert": false,
+    "kategori": "Stupetårn"
+  },
+  {
+    "navn": "Frognerbadet",
+    "sted": "Oslo",
+    "lat": 59.9271,
+    "lng": 10.7099,
+    "hoyder": [
+      1,
+      3,
+      5,
+      10
+    ],
+    "type": "Stupetårn (basseng)",
+    "beskrivelse": "Utendørs friluftsbad med stupeanlegg. Åpent om sommeren.",
+    "verifisert": false,
+    "kategori": "Stupetårn"
+  },
+  {
+    "navn": "Sørenga sjøbad",
+    "sted": "Oslo",
+    "lat": 59.903,
+    "lng": 10.753,
+    "hoyder": [
+      3
+    ],
+    "type": "Stupebrett",
+    "beskrivelse": "Sjøbad midt i byen med brygger og stupebrett.",
+    "verifisert": false,
+    "kategori": "Stupetårn"
+  },
+  {
+    "navn": "Nordnes sjøbad",
+    "sted": "Bergen",
+    "lat": 60.399,
+    "lng": 5.305,
+    "hoyder": [
+      3
+    ],
+    "type": "Stupebrett",
+    "beskrivelse": "Sjøbad med oppvarmet basseng og bading i sjøen.",
+    "verifisert": false,
+    "kategori": "Stupetårn"
+  },
+  {
+    "navn": "Hvalstrand bad",
+    "sted": "Asker",
+    "lat": 59.8432,
+    "lng": 10.4923,
+    "hoyder": [
+      3,
+      5,
+      10
+    ],
+    "type": "Stupetårn",
+    "beskrivelse": "Populært friluftsbad med sandstrand, svaberg og stupetårn med plattformer på 3, 5 og 10 meter.",
+    "verifisert": false,
+    "kategori": "Stupetårn"
+  },
+  {
+    "navn": "Kadettangen",
+    "sted": "Bærum (Sandvika)",
+    "lat": 59.8878,
+    "lng": 10.5313,
+    "hoyder": [
+      3,
+      5,
+      10
+    ],
+    "type": "Stupetårn",
+    "beskrivelse": "Badeplass i Sandvika med stupetårn på 3, 5 og 10 meter, badebinge, kiosk og dusjer.",
+    "verifisert": false,
+    "kategori": "Stupetårn"
+  },
+  {
+    "navn": "Panteren",
+    "sted": "Bygdøy, Oslo",
+    "lat": 59.9053,
+    "lng": 10.664,
+    "hoyder": [
+      11
+    ],
+    "type": "Klippe",
+    "kategori": "Klippe",
+    "beskrivelse": "Klippe på vestsiden av Bygdøy der folk hopper i sjøen. Ca. 11 meter.",
+    "verifisert": false
+  },
+  {
+    "navn": "Kalvøya",
+    "sted": "Bærum (Sandvika)",
+    "lat": 59.8834,
+    "lng": 10.5356,
+    "hoyder": [
+      11
+    ],
+    "type": "Klippe",
+    "kategori": "Klippe",
+    "beskrivelse": "Friluftsøy utenfor Sandvika med svaberg og klipper. Høyeste hopp er ca. 11 meter.",
+    "verifisert": false
+  },
+  {
+    "navn": "Ulvøybrua",
+    "sted": "Nordstrand, Oslo",
+    "lat": 59.8727,
+    "lng": 10.7778,
+    "hoyder": [
+      11
+    ],
+    "type": "Bro",
+    "kategori": "Bro",
+    "beskrivelse": "Broen mellom fastlandet og Ulvøya. Ca. 11 meter. Pass på båttrafikken og sjekk dybden før du hopper.",
+    "verifisert": false,
+    "dybde": {
+      "min": 10,
+      "maks": 20
+    }
+  },
+  {
+    "navn": "Svartputt",
+    "sted": "Nordmarka, Oslo",
+    "lat": 60.0013,
+    "lng": 10.6627,
+    "hoyder": [],
+    "type": "Klippe (ferskvann)",
+    "kategori": "Klippe",
+    "beskrivelse": "Skogstjern i Nordmarka med berg å hoppe fra. Høyden er ikke kjent.",
+    "verifisert": false
+  },
+  {
+    "navn": "Ulvøya",
+    "sted": "Nordstrand, Oslo",
+    "lat": 59.867,
+    "lng": 10.7706,
+    "hoyder": [
+      1,
+      3,
+      5
+    ],
+    "type": "Stupetårn",
+    "kategori": "Stupetårn",
+    "beskrivelse": "Stupetårn på utsiden av Ulvøya med plattformer på 1, 3 og 5 meter. Plasseringen på kartet er omtrentlig.",
+    "verifisert": false
+  },
+  {
+    "navn": "Tøyenbadet",
+    "sted": "Oslo",
+    "lat": 59.9195,
+    "lng": 10.7789,
+    "hoyder": [
+      1,
+      3,
+      5
+    ],
+    "type": "Stupetårn (innendørs)",
+    "kategori": "Stupetårn",
+    "beskrivelse": "Oslos største svømmeanlegg med stupebrett på 1, 3 og 5 meter, også utendørs om sommeren.",
+    "verifisert": false
+  },
+  {
+    "navn": "Risenga svømmehall",
+    "sted": "Asker",
+    "lat": 59.8246,
+    "lng": 10.442,
+    "hoyder": [
+      1,
+      3,
+      5
+    ],
+    "type": "Stupetårn (innendørs)",
+    "kategori": "Stupetårn",
+    "beskrivelse": "Svømmehall med eget stupebasseng og stupetårn på 1, 3 og 5 meter.",
+    "verifisert": false
+  },
+  {
+    "navn": "Nadderudhallen",
+    "sted": "Bærum (Bekkestua)",
+    "lat": 59.9217,
+    "lng": 10.5839,
+    "hoyder": [
+      1,
+      3,
+      5
+    ],
+    "type": "Stupetårn (innendørs)",
+    "kategori": "Stupetårn",
+    "beskrivelse": "Svømmehall med stupetårn på 1, 3 og 5 meter.",
+    "verifisert": false
+  },
+  {
+    "navn": "Boksen på Tjuvholmen",
+    "sted": "Tjuvholmen, Oslo",
+    "lat": 59.906,
+    "lng": 10.7193,
+    "hoyder": [
+      7
+    ],
+    "type": "Stupeboks",
+    "kategori": "Stupetårn",
+    "beskrivelse": "Stupeboks ved Bystranda på Tjuvholmen. Ca. 7 meter.",
+    "verifisert": false,
+    "dybde": {
+      "min": 16,
+      "maks": 17
+    }
+  },
+  {
+    "navn": "Broene til Sørenga",
+    "sted": "Bjørvika, Oslo",
+    "lat": 59.9035,
+    "lng": 10.7542,
+    "hoyder": [
+      4,
+      5
+    ],
+    "type": "Bro",
+    "kategori": "Bro",
+    "beskrivelse": "Gangbroene mellom Bjørvika og Sørenga. Ca. 4–5 meter. Pass på båttrafikken.",
+    "verifisert": false,
+    "dybde": {
+      "min": 9,
+      "maks": 11
+    }
+  },
+  {
+    "navn": "Malmøybrua",
+    "sted": "Bekkelaget, Oslo",
+    "lat": 59.8739,
+    "lng": 10.7587,
+    "hoyder": [],
+    "type": "Bro",
+    "kategori": "Bro",
+    "dybde": {
+      "min": 6,
+      "maks": 10
+    },
+    "beskrivelse": "Broen over Malmøysundet mellom fastlandet og Malmøya. Pass på båttrafikken. Dybden er fra Kartverkets sjøkart. Høyden er ikke kjent.",
+    "verifisert": false
+  },
+  {
+    "navn": "Tjuvholmen-brua",
+    "sted": "Tjuvholmen, Oslo",
+    "lat": 59.9076,
+    "lng": 10.7215,
+    "hoyder": [],
+    "type": "Bro",
+    "kategori": "Bro",
+    "dybde": {
+      "min": 6,
+      "maks": 7
+    },
+    "beskrivelse": "Broen på Tjuvholmen allé mellom Aker Brygge og Tjuvholmen. Det kjører biler over broen. Dybden er fra Kartverkets sjøkart. Høyden er ikke kjent.",
+    "verifisert": false
+  },
+  {
+    "navn": "Broene på Aker Brygge",
+    "sted": "Aker Brygge, Oslo",
+    "lat": 59.9083,
+    "lng": 10.725,
+    "hoyder": [],
+    "type": "Bro",
+    "kategori": "Bro",
+    "dybde": {
+      "min": 5,
+      "maks": 13
+    },
+    "beskrivelse": "Flere små gangbroer langs Stranden på Aker Brygge, også ut til Lekter'n. Mye båttrafikk. Dybden er fra Kartverkets sjøkart. Høyden er ikke kjent.",
+    "verifisert": false
+  },
+  {
+    "navn": "Gangbro ved Nesoddtangen",
+    "sted": "Varden, Nesodden",
+    "lat": 59.8461,
+    "lng": 10.6461,
+    "hoyder": [],
+    "type": "Bro",
+    "kategori": "Bro",
+    "dybde": {
+      "min": 6,
+      "maks": 10
+    },
+    "beskrivelse": "Gangbro på Kavringstien ved Varden, nord på Nesoddtangen. Dybden er fra Kartverkets sjøkart. Høyden er ikke kjent.",
+    "verifisert": false
+  },
+  {
+    "navn": "Broene ved Hengsengveien",
+    "sted": "Bygdøy, Oslo",
+    "lat": 59.9109,
+    "lng": 10.6621,
+    "hoyder": [],
+    "type": "Bro",
+    "kategori": "Bro",
+    "dybde": {
+      "min": 6,
+      "maks": 10
+    },
+    "beskrivelse": "To små gangbroer ved Hengsengveien på Bygdøy. Dybden er fra Kartverkets sjøkart. Høyden er ikke kjent.",
+    "advarsel": "Mulig ulovlig: broene er merket som private i OpenStreetMap.",
+    "verifisert": false
+  },
+  {
+    "navn": "Flytebroen til Nesøya",
+    "sted": "Nesøya, Asker",
+    "lat": 59.8596,
+    "lng": 10.5281,
+    "hoyder": [],
+    "type": "Bro (flytebro)",
+    "kategori": "Bro",
+    "dybde": {
+      "min": 3,
+      "maks": 6
+    },
+    "beskrivelse": "Flytebro ved Vendla på Nesøya. Ligger lavt i vannet. Dybden er fra Kartverkets sjøkart. Høyden er ikke kjent.",
+    "advarsel": "Mulig ulovlig eller ikke mulig: flytebroen ligger ute bare om vinteren, ifølge OpenStreetMap.",
+    "verifisert": false
+  },
+  {
+    "navn": "Gangbro ved Color Line-terminalen",
+    "sted": "Hjortneskaia, Oslo",
+    "lat": 59.9089,
+    "lng": 10.7086,
+    "hoyder": [],
+    "type": "Bro",
+    "kategori": "Bro",
+    "dybde": {
+      "min": 9,
+      "maks": 10
+    },
+    "beskrivelse": "Gangbro ved ferjeterminalen på Hjortneskaia. Dybden er fra Kartverkets sjøkart. Høyden er ikke kjent.",
+    "advarsel": "Mulig ulovlig: havneområde med ferjetrafikk, og trolig stengt for publikum.",
+    "verifisert": false
+  },
+  {
+    "navn": "Klippen i Gjersjøen",
+    "sted": "Nordre Follo",
+    "lat": 59.7865,
+    "lng": 10.7932,
+    "hoyder": [
+      15
+    ],
+    "type": "Klippe (ferskvann)",
+    "kategori": "Klippe",
+    "beskrivelse": "Klippe ved Gjersjøen, ca. 15 meter. Gjersjøen er drikkevannskilde, så ta hensyn. Plasseringen på kartet er omtrentlig.",
+    "verifisert": false
+  }
+]
