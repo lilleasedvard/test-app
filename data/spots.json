@@ -343,5 +343,18 @@
     "beskrivelse": "Gangbro ved ferjeterminalen på Hjortneskaia. Dybden er fra Kartverkets sjøkart. Høyden er ikke kjent.",
     "advarsel": "Mulig ulovlig: havneområde med ferjetrafikk, og trolig stengt for publikum.",
     "verifisert": false
+  },
+  {
+    "navn": "Klippen i Gjersjøen",
+    "sted": "Nordre Follo",
+    "lat": 59.7865,
+    "lng": 10.7932,
+    "hoyder": [
+      15
+    ],
+    "type": "Klippe (ferskvann)",
+    "kategori": "Klippe",
+    "beskrivelse": "Klippe ved Gjersjøen, ca. 15 meter. Gjersjøen er drikkevannskilde, så ta hensyn. Plasseringen på kartet er omtrentlig.",
+    "verifisert": false
   }
 ]
