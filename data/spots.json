@@ -295,5 +295,53 @@
     },
     "beskrivelse": "Gangbro på Kavringstien ved Varden, nord på Nesoddtangen. Dybden er fra Kartverkets sjøkart. Høyden er ikke kjent.",
     "verifisert": false
+  },
+  {
+    "navn": "Broene ved Hengsengveien",
+    "sted": "Bygdøy, Oslo",
+    "lat": 59.9109,
+    "lng": 10.6621,
+    "hoyder": [],
+    "type": "Bro",
+    "kategori": "Bro",
+    "dybde": {
+      "min": 6,
+      "maks": 10
+    },
+    "beskrivelse": "To små gangbroer ved Hengsengveien på Bygdøy. Dybden er fra Kartverkets sjøkart. Høyden er ikke kjent.",
+    "advarsel": "Mulig ulovlig: broene er merket som private i OpenStreetMap.",
+    "verifisert": false
+  },
+  {
+    "navn": "Flytebroen til Nesøya",
+    "sted": "Nesøya, Asker",
+    "lat": 59.8596,
+    "lng": 10.5281,
+    "hoyder": [],
+    "type": "Bro (flytebro)",
+    "kategori": "Bro",
+    "dybde": {
+      "min": 3,
+      "maks": 6
+    },
+    "beskrivelse": "Flytebro ved Vendla på Nesøya. Ligger lavt i vannet. Dybden er fra Kartverkets sjøkart. Høyden er ikke kjent.",
+    "advarsel": "Mulig ulovlig eller ikke mulig: flytebroen ligger ute bare om vinteren, ifølge OpenStreetMap.",
+    "verifisert": false
+  },
+  {
+    "navn": "Gangbro ved Color Line-terminalen",
+    "sted": "Hjortneskaia, Oslo",
+    "lat": 59.9089,
+    "lng": 10.7086,
+    "hoyder": [],
+    "type": "Bro",
+    "kategori": "Bro",
+    "dybde": {
+      "min": 9,
+      "maks": 10
+    },
+    "beskrivelse": "Gangbro ved ferjeterminalen på Hjortneskaia. Dybden er fra Kartverkets sjøkart. Høyden er ikke kjent.",
+    "advarsel": "Mulig ulovlig: havneområde med ferjetrafikk, og trolig stengt for publikum.",
+    "verifisert": false
   }
 ]

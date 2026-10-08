@@ -102,6 +102,13 @@ button {
 .liste .avstand { color: var(--aksent); font-weight: 600; white-space: nowrap; }
 .liste .info { color: var(--dempet); font-size: 0.9rem; margin-top: 0.25rem; }
 
+.advarsel {
+  color: #b42318;
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin-top: 0.3rem;
+}
+
 footer {
   text-align: center;
   color: var(--dempet);

@@ -99,11 +99,13 @@ function tegn() {
       ? s.hoyder.map((h) => `${h} m`).join(", ")
       : "høyde ikke kjent";
     const dybde = dybdeTekst(s);
-    const popup = `<strong>${s.navn}</strong><br>${s.type}: ${hoyder}${dybde ? `, ${dybde}` : ""}<br>${s.beskrivelse}`;
+    const advarsel = s.advarsel ? `<div class="advarsel">⚠ ${s.advarsel}</div>` : "";
+    const popup = `<strong>${s.navn}</strong><br>${s.type}: ${hoyder}${dybde ? `, ${dybde}` : ""}<br>${s.beskrivelse}${advarsel}`;
     const markor = L.circleMarker([s.lat, s.lng], {
       radius: 9,
-      color: "#ffffff",
-      weight: 2,
+      // Steder som kan være ulovlige får rød kant.
+      color: s.advarsel ? "#d62828" : "#ffffff",
+      weight: s.advarsel ? 3 : 2,
       fillColor: farge,
       fillOpacity: 1,
     })
@@ -117,7 +119,7 @@ function tegn() {
         <strong><span class="prikk" style="background:${farge}"></span>${s.navn}</strong>
         <span class="avstand">${formaterAvstand(s.avstand)}</span>
       </div>
-      <div class="info">${[s.sted, s.type, hoydeTekst(s), dybde].filter(Boolean).join(" · ")}</div>`;
+      <div class="info">${[s.sted, s.type, hoydeTekst(s), dybde].filter(Boolean).join(" · ")}</div>${advarsel}`;
     li.addEventListener("click", () => {
       kart.setView([s.lat, s.lng], 14);
       markor.openPopup();
