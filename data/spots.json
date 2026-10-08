@@ -1,0 +1,42 @@
+[
+  {
+    "navn": "Ingierstrand bad",
+    "sted": "Nordre Follo",
+    "lat": 59.8260,
+    "lng": 10.7660,
+    "hoyder": [5, 10],
+    "type": "Stupetårn",
+    "beskrivelse": "Klassisk friluftsbad ved Bunnefjorden med stupetårn.",
+    "verifisert": false
+  },
+  {
+    "navn": "Frognerbadet",
+    "sted": "Oslo",
+    "lat": 59.9271,
+    "lng": 10.7099,
+    "hoyder": [1, 3, 5, 10],
+    "type": "Stupetårn (basseng)",
+    "beskrivelse": "Utendørs friluftsbad med stupeanlegg. Åpent om sommeren.",
+    "verifisert": false
+  },
+  {
+    "navn": "Sørenga sjøbad",
+    "sted": "Oslo",
+    "lat": 59.9030,
+    "lng": 10.7530,
+    "hoyder": [3],
+    "type": "Stupebrett",
+    "beskrivelse": "Sjøbad midt i byen med brygger og stupebrett.",
+    "verifisert": false
+  },
+  {
+    "navn": "Nordnes sjøbad",
+    "sted": "Bergen",
+    "lat": 60.3990,
+    "lng": 5.3050,
+    "hoyder": [3],
+    "type": "Stupebrett",
+    "beskrivelse": "Sjøbad med oppvarmet basseng og bading i sjøen.",
+    "verifisert": false
+  }
+]

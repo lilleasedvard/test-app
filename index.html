@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="no">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hoppesteder</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Hoppesteder</h1>
+    <p>Badesteder i nærheten der du kan hoppe fra en høyde</p>
+  </header>
+
+  <div class="varsel" role="note">
+    Sjekk alltid dybden og at det er fritt under før du hopper. Hopp aldri alene.
+  </div>
+
+  <main>
+    <section class="kontroller">
+      <button id="finn-meg" type="button">Bruk min posisjon</button>
+      <label for="min-hoyde">
+        Minst <strong id="min-hoyde-verdi">0</strong> m høyde
+      </label>
+      <input id="min-hoyde" type="range" min="0" max="10" step="1" value="0">
+      <p id="status" class="status"></p>
+    </section>
+
+    <div id="kart" aria-label="Kart over hoppesteder"></div>
+
+    <section>
+      <h2>Nærmest deg</h2>
+      <ol id="liste" class="liste"></ol>
+    </section>
+  </main>
+
+  <footer>
+    Dataene er eksempler og er ikke verifisert. Kart: © OpenStreetMap-bidragsytere.
+  </footer>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

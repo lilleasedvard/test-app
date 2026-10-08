@@ -1,0 +1,85 @@
+:root {
+  --bg: #f4f8fb;
+  --kort: #ffffff;
+  --tekst: #13293d;
+  --dempet: #5a6f82;
+  --aksent: #0077b6;
+  --varsel-bg: #fff4d6;
+  --varsel-kant: #e0b23a;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+  background: var(--bg);
+  color: var(--tekst);
+}
+
+header {
+  background: var(--aksent);
+  color: #fff;
+  padding: 1rem;
+}
+header h1 { margin: 0; font-size: 1.6rem; }
+header p { margin: 0.25rem 0 0; opacity: 0.9; }
+
+.varsel {
+  background: var(--varsel-bg);
+  border-left: 4px solid var(--varsel-kant);
+  padding: 0.6rem 1rem;
+  font-size: 0.9rem;
+}
+
+main {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.kontroller {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+button {
+  background: var(--aksent);
+  color: #fff;
+  border: 0;
+  border-radius: 6px;
+  padding: 0.6rem 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.status { width: 100%; margin: 0; color: var(--dempet); font-size: 0.9rem; }
+
+#kart {
+  height: 380px;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.liste { list-style: none; padding: 0; margin: 0; }
+.liste li {
+  background: var(--kort);
+  border-radius: 8px;
+  padding: 0.75rem 1rem;
+  margin-bottom: 0.5rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+  cursor: pointer;
+}
+.liste .topp { display: flex; justify-content: space-between; gap: 0.5rem; }
+.liste .avstand { color: var(--aksent); font-weight: 600; white-space: nowrap; }
+.liste .info { color: var(--dempet); font-size: 0.9rem; margin-top: 0.25rem; }
+
+footer {
+  text-align: center;
+  color: var(--dempet);
+  font-size: 0.8rem;
+  padding: 1rem;
+}
