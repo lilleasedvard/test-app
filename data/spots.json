@@ -92,10 +92,12 @@
     "sted": "Bygdøy, Oslo",
     "lat": 59.9053,
     "lng": 10.664,
-    "hoyder": [],
+    "hoyder": [
+      11
+    ],
     "type": "Klippe",
     "kategori": "Klippe",
-    "beskrivelse": "Klippe på vestsiden av Bygdøy der folk hopper i sjøen. Høyden er ikke kjent.",
+    "beskrivelse": "Klippe på vestsiden av Bygdøy der folk hopper i sjøen. Ca. 11 meter.",
     "verifisert": false
   },
   {
@@ -103,21 +105,12 @@
     "sted": "Bærum (Sandvika)",
     "lat": 59.8834,
     "lng": 10.5356,
-    "hoyder": [],
+    "hoyder": [
+      11
+    ],
     "type": "Klippe",
     "kategori": "Klippe",
-    "beskrivelse": "Friluftsøy utenfor Sandvika med svaberg og klipper rundt hele øya. Høydene varierer.",
-    "verifisert": false
-  },
-  {
-    "navn": "Svartkulp",
-    "sted": "Sognsvann, Oslo",
-    "lat": 59.9757,
-    "lng": 10.7395,
-    "hoyder": [],
-    "type": "Klippe (ferskvann)",
-    "kategori": "Klippe",
-    "beskrivelse": "Liten skogstjern øst for Sognsvann med berg å hoppe fra. Ca. 10 minutters gange fra parkeringen.",
+    "beskrivelse": "Friluftsøy utenfor Sandvika med svaberg og klipper. Høyeste hopp er ca. 11 meter.",
     "verifisert": false
   },
   {
@@ -125,10 +118,83 @@
     "sted": "Nordre Follo",
     "lat": 59.8259,
     "lng": 10.7698,
-    "hoyder": [],
+    "hoyder": [
+      11
+    ],
     "type": "Bro",
     "kategori": "Bro",
-    "beskrivelse": "Bro på Ingierstrandveien nord for Ingierstrand bad. Høyde og dybde er ikke kjent.",
+    "beskrivelse": "Bro på Ingierstrandveien nord for Ingierstrand bad. Ca. 11 meter. Sjekk dybden før du hopper.",
+    "verifisert": false
+  },
+  {
+    "navn": "Svartputt",
+    "sted": "Nordmarka, Oslo",
+    "lat": 60.0013,
+    "lng": 10.6627,
+    "hoyder": [],
+    "type": "Klippe (ferskvann)",
+    "kategori": "Klippe",
+    "beskrivelse": "Skogstjern i Nordmarka med berg å hoppe fra. Høyden er ikke kjent.",
+    "verifisert": false
+  },
+  {
+    "navn": "Ulvøya",
+    "sted": "Nordstrand, Oslo",
+    "lat": 59.867,
+    "lng": 10.7706,
+    "hoyder": [
+      1,
+      3,
+      5
+    ],
+    "type": "Stupetårn",
+    "kategori": "Stupetårn",
+    "beskrivelse": "Stupetårn på utsiden av Ulvøya med plattformer på 1, 3 og 5 meter. Plasseringen på kartet er omtrentlig.",
+    "verifisert": false
+  },
+  {
+    "navn": "Tøyenbadet",
+    "sted": "Oslo",
+    "lat": 59.9195,
+    "lng": 10.7789,
+    "hoyder": [
+      1,
+      3,
+      5
+    ],
+    "type": "Stupetårn (innendørs)",
+    "kategori": "Stupetårn",
+    "beskrivelse": "Oslos største svømmeanlegg med stupebrett på 1, 3 og 5 meter, også utendørs om sommeren.",
+    "verifisert": false
+  },
+  {
+    "navn": "Risenga svømmehall",
+    "sted": "Asker",
+    "lat": 59.8246,
+    "lng": 10.442,
+    "hoyder": [
+      1,
+      3,
+      5
+    ],
+    "type": "Stupetårn (innendørs)",
+    "kategori": "Stupetårn",
+    "beskrivelse": "Svømmehall med eget stupebasseng og stupetårn på 1, 3 og 5 meter.",
+    "verifisert": false
+  },
+  {
+    "navn": "Nadderudhallen",
+    "sted": "Bærum (Bekkestua)",
+    "lat": 59.9217,
+    "lng": 10.5839,
+    "hoyder": [
+      1,
+      3,
+      5
+    ],
+    "type": "Stupetårn (innendørs)",
+    "kategori": "Stupetårn",
+    "beskrivelse": "Svømmehall med stupetårn på 1, 3 og 5 meter.",
     "verifisert": false
   }
 ]

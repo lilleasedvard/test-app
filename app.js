@@ -182,6 +182,9 @@ fetch("data/spots.json")
   .then((r) => r.json())
   .then((data) => {
     steder = data;
+    // Glideren går opp til det høyeste hoppet i dataene.
+    const maks = Math.max(...steder.map((s) => hoyesteHopp(s) ?? 0));
+    if (maks > 0) hoydeEl.max = maks;
     statusEl.textContent = "Viser avstand fra Oslo sentrum. Trykk for å bruke din posisjon.";
     tegn();
   })
