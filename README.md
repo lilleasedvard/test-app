@@ -27,6 +27,11 @@ verifisert**. Sjekk høyder og koordinater før siden tas i bruk.
 [robhop/fylker-og-kommuner](https://github.com/robhop/fylker-og-kommuner).
 Den brukes som bakgrunnskart når kartflisene fra OpenStreetMap ikke lastes.
 
+Broene over sjø i indre Oslofjord er funnet i OpenStreetMap, og dybden under
+dem er slått opp i Kartverkets sjøkart (WMS `wms.dybdedata2`, laget
+`Dybdelag`, CC BY 4.0). Bare broer med minst 3 m minstedybde er tatt med.
+Feltet `dybde` i `spots.json` er minste og største dybde i dybdeområdet.
+
 ## Mulige neste steg
 
 - Hente badesteder automatisk fra OpenStreetMap (Overpass API)

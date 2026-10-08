@@ -69,6 +69,13 @@ function hoydeTekst(sted) {
   return h === null ? "ukjent høyde" : `opptil ${h} m`;
 }
 
+// Dybde fra Kartverkets sjøkart, f.eks. «dybde 6–10 m».
+function dybdeTekst(sted) {
+  if (!sted.dybde) return "";
+  const { min, maks } = sted.dybde;
+  return maks && maks !== min ? `dybde ${min}–${maks} m` : `dybde ${min} m`;
+}
+
 function tegn() {
   markorer.forEach((m) => m.remove());
   markorer = [];
@@ -91,7 +98,8 @@ function tegn() {
     const hoyder = s.hoyder.length
       ? s.hoyder.map((h) => `${h} m`).join(", ")
       : "høyde ikke kjent";
-    const popup = `<strong>${s.navn}</strong><br>${s.type}: ${hoyder}<br>${s.beskrivelse}`;
+    const dybde = dybdeTekst(s);
+    const popup = `<strong>${s.navn}</strong><br>${s.type}: ${hoyder}${dybde ? `, ${dybde}` : ""}<br>${s.beskrivelse}`;
     const markor = L.circleMarker([s.lat, s.lng], {
       radius: 9,
       color: "#ffffff",
@@ -109,7 +117,7 @@ function tegn() {
         <strong><span class="prikk" style="background:${farge}"></span>${s.navn}</strong>
         <span class="avstand">${formaterAvstand(s.avstand)}</span>
       </div>
-      <div class="info">${s.sted} · ${s.type} · ${hoydeTekst(s)}</div>`;
+      <div class="info">${[s.sted, s.type, hoydeTekst(s), dybde].filter(Boolean).join(" · ")}</div>`;
     li.addEventListener("click", () => {
       kart.setView([s.lat, s.lng], 14);
       markor.openPopup();

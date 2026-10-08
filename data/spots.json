@@ -124,7 +124,11 @@
     "type": "Bro",
     "kategori": "Bro",
     "beskrivelse": "Broen mellom fastlandet og Ulvøya. Ca. 11 meter. Pass på båttrafikken og sjekk dybden før du hopper.",
-    "verifisert": false
+    "verifisert": false,
+    "dybde": {
+      "min": 10,
+      "maks": 20
+    }
   },
   {
     "navn": "Svartputt",
@@ -208,7 +212,11 @@
     "type": "Stupeboks",
     "kategori": "Stupetårn",
     "beskrivelse": "Stupeboks ved Bystranda på Tjuvholmen. Ca. 7 meter.",
-    "verifisert": false
+    "verifisert": false,
+    "dybde": {
+      "min": 16,
+      "maks": 17
+    }
   },
   {
     "navn": "Broene til Sørenga",
@@ -222,6 +230,70 @@
     "type": "Bro",
     "kategori": "Bro",
     "beskrivelse": "Gangbroene mellom Bjørvika og Sørenga. Ca. 4–5 meter. Pass på båttrafikken.",
+    "verifisert": false,
+    "dybde": {
+      "min": 9,
+      "maks": 11
+    }
+  },
+  {
+    "navn": "Malmøybrua",
+    "sted": "Bekkelaget, Oslo",
+    "lat": 59.8739,
+    "lng": 10.7587,
+    "hoyder": [],
+    "type": "Bro",
+    "kategori": "Bro",
+    "dybde": {
+      "min": 6,
+      "maks": 10
+    },
+    "beskrivelse": "Broen over Malmøysundet mellom fastlandet og Malmøya. Pass på båttrafikken. Dybden er fra Kartverkets sjøkart. Høyden er ikke kjent.",
+    "verifisert": false
+  },
+  {
+    "navn": "Tjuvholmen-brua",
+    "sted": "Tjuvholmen, Oslo",
+    "lat": 59.9076,
+    "lng": 10.7215,
+    "hoyder": [],
+    "type": "Bro",
+    "kategori": "Bro",
+    "dybde": {
+      "min": 6,
+      "maks": 7
+    },
+    "beskrivelse": "Broen på Tjuvholmen allé mellom Aker Brygge og Tjuvholmen. Det kjører biler over broen. Dybden er fra Kartverkets sjøkart. Høyden er ikke kjent.",
+    "verifisert": false
+  },
+  {
+    "navn": "Broene på Aker Brygge",
+    "sted": "Aker Brygge, Oslo",
+    "lat": 59.9083,
+    "lng": 10.725,
+    "hoyder": [],
+    "type": "Bro",
+    "kategori": "Bro",
+    "dybde": {
+      "min": 5,
+      "maks": 13
+    },
+    "beskrivelse": "Flere små gangbroer langs Stranden på Aker Brygge, også ut til Lekter'n. Mye båttrafikk. Dybden er fra Kartverkets sjøkart. Høyden er ikke kjent.",
+    "verifisert": false
+  },
+  {
+    "navn": "Gangbro ved Nesoddtangen",
+    "sted": "Varden, Nesodden",
+    "lat": 59.8461,
+    "lng": 10.6461,
+    "hoyder": [],
+    "type": "Bro",
+    "kategori": "Bro",
+    "dybde": {
+      "min": 6,
+      "maks": 10
+    },
+    "beskrivelse": "Gangbro på Kavringstien ved Varden, nord på Nesoddtangen. Dybden er fra Kartverkets sjøkart. Høyden er ikke kjent.",
     "verifisert": false
   }
 ]
