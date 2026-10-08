@@ -196,5 +196,32 @@
     "kategori": "Stupetårn",
     "beskrivelse": "Svømmehall med stupetårn på 1, 3 og 5 meter.",
     "verifisert": false
+  },
+  {
+    "navn": "Boksen på Tjuvholmen",
+    "sted": "Tjuvholmen, Oslo",
+    "lat": 59.906,
+    "lng": 10.7193,
+    "hoyder": [
+      7
+    ],
+    "type": "Stupeboks",
+    "kategori": "Stupetårn",
+    "beskrivelse": "Stupeboks ved Bystranda på Tjuvholmen. Ca. 7 meter.",
+    "verifisert": false
+  },
+  {
+    "navn": "Broene til Sørenga",
+    "sted": "Bjørvika, Oslo",
+    "lat": 59.9035,
+    "lng": 10.7542,
+    "hoyder": [
+      4,
+      5
+    ],
+    "type": "Bro",
+    "kategori": "Bro",
+    "beskrivelse": "Gangbroene mellom Bjørvika og Sørenga. Ca. 4–5 meter. Pass på båttrafikken.",
+    "verifisert": false
   }
 ]
