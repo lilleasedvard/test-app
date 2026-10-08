@@ -114,16 +114,16 @@
     "verifisert": false
   },
   {
-    "navn": "Ingierstrand-brua",
-    "sted": "Nordre Follo",
-    "lat": 59.8259,
-    "lng": 10.7698,
+    "navn": "Ulvøybrua",
+    "sted": "Nordstrand, Oslo",
+    "lat": 59.8727,
+    "lng": 10.7778,
     "hoyder": [
       11
     ],
     "type": "Bro",
     "kategori": "Bro",
-    "beskrivelse": "Bro på Ingierstrandveien nord for Ingierstrand bad. Ca. 11 meter. Sjekk dybden før du hopper.",
+    "beskrivelse": "Broen mellom fastlandet og Ulvøya. Ca. 11 meter. Pass på båttrafikken og sjekk dybden før du hopper.",
     "verifisert": false
   },
   {
